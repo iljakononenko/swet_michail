@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/aa7653.css" />
     <link rel="stylesheet" href="./css/3916a7.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./img/cropped-favicon-32x32.png" sizes="32x32">
     <title>Swiet</title>
   </head>
   <body>
@@ -110,7 +111,7 @@
             <a
               style="background-color: #64c11b"
               id="top_reservation_button"
-              href=""
+              onclick="scrollToForm()"
               class="mybtn"
             >
               <span class="d-block d-md-none">Wezwij</span>
@@ -145,7 +146,7 @@
                     height: fit-content;
                     display: inline-block;
                     background-color: #1171f3;
-                    height: ;
+
                   "
                 >
                   <img
@@ -170,7 +171,6 @@
                     height: fit-content;
                     display: inline-block;
                     background-color: #f8920a;
-                    height: ;
                   "
                 >
                   <img
@@ -195,7 +195,6 @@
                     height: fit-content;
                     display: inline-block;
                     background-color: #f80d62;
-                    height: ;
                   "
                 >
                   <img
@@ -414,7 +413,7 @@
       </div>
     </section>
 
-    <section class="services_boxes">
+    <section class="services_boxes d-none">
       <div class="container">
         <div class style="margin: 0 -15px">
           <div class="hhsitem">
@@ -900,11 +899,6 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col text-center">
-            <a href="" class="mybtn w-100">Więcej producentów</a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -1236,7 +1230,7 @@
               </p>
 
               <p>
-                <a href="" class="mybtn">Wybierz termin</a>
+                <a class="mybtn" onclick="scrollToForm()">Wybierz termin</a>
               </p>
             </div>
           </div>
@@ -1254,15 +1248,94 @@
       </div>
     </section>
 
+    <section class="custom-contact-form" id="contact">
+        <div class="container mt-5" >
+        
+            <div class="d-md-flex">
+              <div class="col-md-6 maps" >
+                <iframe src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=Wroc%C5%82aw+(Wroc%C5%82aw)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <h2 class="text-uppercase mt-3 font-weight-bold">Kontakt</h2>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group mt-2">
+                        <label for="">Imię i Nazwisko</label>
+                        <input type="text" class="form-control" placeholder="Imię i Nazwisko" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mt-2">
+                        <label for="">Miasto</label>
+                        <input type="text" class="form-control" placeholder="Miasto" value="Wrocław" disabled required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mt-2">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mt-2">
+                        <label for="">Telefon</label>
+                        <input type="text" class="form-control" placeholder="Telefon" required>
+                      </div>
+                    </div>
+                    <div class="col-12 form-group mt-2">
+                      <label for="">Usługa</label>
+                      <div class="form-control custom-select">
+                          <p class="value-selected">
+                            Wybierz usługę
+                          </p>
+                          <div class="options d-none">
+                            <div style="padding: 0.5rem 1rem; border-bottom: 1px solid #aaa">
+                              <input type="text" class="form-control">
+                            </div>
+                            <ul class="">
+                            </ul>
+                          </div>
+                      </div>
+          
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group mt-2">
+                        <label for="">Opis problemu</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Opis problemu" rows="3" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                    <div class="form-group d-none">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Zgadzam się z polityką prywatności
+                        </label>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-12 text-end">
+                      <button class="btn btn-light" type="submit">Wysłać</button>
+                    </div>
+                  </div>
+                </form>
+                </div>
+              </div>
+        
+          </div>
+        
+    </section>
+
     <footer>
       <div class="footer-bottom">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 text-lg-left fcopy order-1 order-sm-0">
-              <p>usterka.pl © 2023</p>
+              <p>Swiet © 2023</p>
             </div>
 
-            <div class="col-lg-6 text-lg-right fsocial order-0 order-sm-1">
+            <div class="col-lg-6 text-lg-right fsocial order-0 order-sm-1 d-none">
               <p>
                 <span class="fjoin-us">Znajdź nas</span>
                 <a href="" class="fsocial-ico" rel="nofollow"
@@ -1308,8 +1381,11 @@
 
     <script
       type="text/javascript"
-      src="js/jquery.min.js"
+      src="js/jquery.js"
       id="jquery-core-js"
     ></script>
+    <script src="js/script.js">
+
+    </script>
   </body>
 </html>

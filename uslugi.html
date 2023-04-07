@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/aa7653.css" />
     <link rel="stylesheet" href="./css/3916a7.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./img/cropped-favicon-32x32.png" sizes="32x32">
     <title>Swiet</title>
   </head>
   <body>
@@ -107,15 +108,15 @@
                 alt="Ikona rozwijania nawigacji"
             /></a>
 
-            <a
-              style="background-color: #64c11b"
+            <span
+              style="background-color: #64c11b; cursor: pointer;"
               id="top_reservation_button"
-              href="#"
               class="mybtn"
+              onclick="openModal()"
             >
               <span class="d-block d-md-none">Wezwij</span>
-              <span class="d-none d-md-block">Zamów fachowca</span></a
-            >
+              <span class="d-none d-md-block">Zamów fachowca</span>
+          </span>
           </div>
         </div>
       </div>
@@ -177,7 +178,7 @@
             <h3>Hydraulik</h3>
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Wyciek pod zlewem">
+                <a href="#" class="usluga" title="Wyciek pod zlewem">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -193,7 +194,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Muszla do wymiany">
+                <a href="#" class="usluga" title="Muszla do wymiany">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -209,7 +210,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Montaż kranu">
+                <a href="#" class="usluga" title="Montaż kranu">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -225,7 +226,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Kaloryfer nie grzeje">
+                <a href="#" class="usluga" title="Kaloryfer nie grzeje">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -243,7 +244,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Woda nie schodzi">
+                <a href="#" class="usluga" title="Woda nie schodzi">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -259,7 +260,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Pęknięta rura">
+                <a href="#" class="usluga" title="Pęknięta rura">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -275,7 +276,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Bojler nie działa">
+                <a href="#" class="usluga" title="Bojler nie działa">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -291,7 +292,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Montaż kabin prysznicowych">
+                <a href="#" class="usluga" title="Montaż kabin prysznicowych">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -309,7 +310,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Spłuczka przecieka">
+                <a href="#" class="usluga" title="Spłuczka przecieka">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -328,7 +329,7 @@
             <h3>Elektryk</h3>
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Montaż oświetlenia">
+                <a href="#" class="usluga" title="Montaż oświetlenia">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -344,7 +345,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Wyrwane gniazdka">
+                <a href="#" class="usluga" title="Wyrwane gniazdka">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -360,7 +361,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Podłączanie płyt indukcyjnych">
+                <a href="#" class="usluga" title="Podłączanie płyt indukcyjnych">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -378,7 +379,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Wymiana bezpieczników">
+                <a href="#" class="usluga" title="Wymiana bezpieczników">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -396,7 +397,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Gniazdko nie działa">
+                <a href="#" class="usluga" title="Gniazdko nie działa">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -414,7 +415,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Brak prądu">
+                <a href="#" class="usluga" title="Brak prądu">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -433,7 +434,7 @@
             <h3>Pralki</h3>
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Pralka nie pobiera wody">
+                <a href="#" class="usluga" title="Pralka nie pobiera wody">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -451,7 +452,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Pralka nie grzeje wody">
+                <a href="#" class="usluga" title="Pralka nie grzeje wody">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -469,7 +470,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Zatkany filtr w pralce">
+                <a href="#" class="usluga" title="Zatkany filtr w pralce">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -487,7 +488,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Bęben się nie kręci">
+                <a href="#" class="usluga" title="Bęben się nie kręci">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -505,7 +506,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Pralka wyświetla błąd">
+                <a href="#" class="usluga" title="Pralka wyświetla błąd">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -523,7 +524,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Pralka przecieka">
+                <a href="#" class="usluga" title="Pralka przecieka">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -542,7 +543,7 @@
             <h3>Piekarniki</h3>
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Piekarnik nie nagrzewa się">
+                <a href="#" class="usluga" title="Piekarnik nie nagrzewa się">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -560,7 +561,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Piekarnik nie włącza się">
+                <a href="#" class="usluga" title="Piekarnik nie włącza się">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -578,7 +579,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Piekarnik wybija korki">
+                <a href="#" class="usluga" title="Piekarnik wybija korki">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -596,7 +597,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Piekarnik wyświetla błąd">
+                <a href="#" class="usluga" title="Piekarnik wyświetla błąd">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -617,7 +618,7 @@
             <h3>Zmywarki</h3>
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Zmywarka nie pobiera wody">
+                <a href="#" class="usluga" title="Zmywarka nie pobiera wody">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -635,7 +636,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Zmywarka nie odprowadza wody">
+                <a href="#" class="usluga" title="Zmywarka nie odprowadza wody">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -653,7 +654,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Zmywarka nie grzeje wody">
+                <a href="#" class="usluga" title="Zmywarka nie grzeje wody">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -671,7 +672,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Zmywarka nie rusza">
+                <a href="#" class="usluga" title="Zmywarka nie rusza">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -687,7 +688,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Zmywarka wyświetla błąd">
+                <a href="#" class="usluga" title="Zmywarka wyświetla błąd">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -705,7 +706,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Drzwi zmywarki opadają">
+                <a href="#" class="usluga" title="Drzwi zmywarki opadają">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -726,7 +727,7 @@
             <h3>Pozostale</h3>
             <div class="row">
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Wieszanie telewizora na ścianie">
+                <a href="#" class="usluga" title="Wieszanie telewizora na ścianie">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -744,7 +745,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Skręcanie łóżek">
+                <a href="#" class="usluga" title="Skręcanie łóżek">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -760,7 +761,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Skręcanie szaf">
+                <a href="#" class="usluga" title="Skręcanie szaf">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -776,7 +777,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Montaż półek">
+                <a href="#" class="usluga" title="Montaż półek">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -792,7 +793,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Płytkowanie">
+                <a href="#" class="usluga" title="Płytkowanie">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -808,7 +809,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Regulacja i wymiana drzwi">
+                <a href="#" class="usluga" title="Regulacja i wymiana drzwi">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -826,7 +827,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Remonty i wykańczanie wnętrz">
+                <a href="#" class="usluga" title="Remonty i wykańczanie wnętrz">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -844,7 +845,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Malowanie i tapetowanie ścian">
+                <a href="#" class="usluga" title="Malowanie i tapetowanie ścian">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -862,7 +863,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Serwis lodówek">
+                <a href="#" class="usluga" title="Serwis lodówek">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -878,7 +879,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Serwis klimatyzacji">
+                <a href="#" class="usluga" title="Serwis klimatyzacji">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -896,7 +897,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Prace w ogrodzie">
+                <a href="#" class="usluga" title="Prace w ogrodzie">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -912,7 +913,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Wymiana zamków do drzwi">
+                <a href="#" class="usluga" title="Wymiana zamków do drzwi">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -930,7 +931,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Serwis kuchenek gazowych">
+                <a href="#" class="usluga" title="Serwis kuchenek gazowych">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -948,7 +949,7 @@
                 </a>
               </div>
               <div class="col-12 col-sm-6 col-md-4">
-                <a href="#" title="Naprawa bram">
+                <a href="#" class="usluga" title="Naprawa bram">
                   <div class="image_boxes_new__item">
                     <div class="image_boxes_new__image">
                       <img
@@ -979,7 +980,7 @@
                     <div class="book-box-btns catalog_contact_buttons">
                       <a
                         rel="nofollow"
-                        href="https://rezerwacja.usterka.pl/umow?source=usterka&place=sidebar"
+                        href="#"
                         class="d-block mybtn"
                         >Wybierz termin on-line</a
                       >
@@ -1017,7 +1018,7 @@
                   </div>
                 </div>
               </div>
-              <div class="sidebar_services mt-4">
+              <div class="sidebar_services mt-4 d-none">
                 <h3>Nasze usługi:</h3>
                 <ul>
                   <li>
@@ -1063,5 +1064,103 @@
         </div>
       </div>
     </section>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="d-flex align-items-center">
+          <h5 class="modal-title text-uppercase font-weight-bold" id="exampleModalLabel">Kontakt</h5>
+        <span class="ms-1" style="min-width: 20px;">
+        </span> 
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-12">
+          <h2 class="text-uppercase mt-3 font-weight-bold d-none">Kontakt</h2>
+          <form action="">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group mt-2">
+                  <label for="">Imię i Nazwisko</label>
+                  <input type="text" class="form-control" placeholder="Imię i Nazwisko" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mt-2">
+                  <label for="">Miasto</label>
+                  <input type="text" class="form-control" placeholder="Miasto" value="Wrocław" disabled required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mt-2">
+                  <label for="">Email</label>
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mt-2">
+                  <label for="">Telefon</label>
+                  <input type="text" class="form-control" placeholder="Telefon" required>
+                </div>
+              </div>
+              <div class="col-12 form-group mt-2">
+                <label for="">Usługa</label>
+                <div class="form-control custom-select">
+                    <p class="value-selected">
+                      Wybierz usługę
+                    </p>
+                    <div class="options d-none">
+                      <div style="padding: 0.5rem 1rem; border-bottom: 1px solid #aaa">
+                        <input type="text" class="form-control">
+                      </div>
+                      <ul class="">
+                      </ul>
+                    </div>
+                </div>
+    
+              </div>
+              <div class="col-12">
+                <div class="form-group mt-2">
+                  <label for="">Opis problemu</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Opis problemu" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+              <div class="form-group d-none">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Zgadzam się z polityką prywatności
+                  </label>
+                </div>
+              </div>
+              </div>
+              <div class="col-12 text-end">
+                <button class="btn btn-light" type="submit">Wysłać</button>
+              </div>
+            </div>
+          </form>
+          </div>
+      </div>
+      <div class="modal-footer d-none">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-backdrop" class=""></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script
+    type="text/javascript"
+    src="js/jquery.js"
+    id="jquery-core-js"
+  ></script>
+  <script src="js/script.js">
+    </script>
   </body>
 </html>

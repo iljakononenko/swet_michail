@@ -130,3 +130,192 @@
   height: 100%;
   width: 100%;
 }
+
+/* Contact form */
+
+.custom-contact-form  {
+  letter-spacing: 2px;
+  padding-bottom: 100px
+}
+.custom-contact-form a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 575.98px) {
+
+  .custom-contact-form .maps iframe{
+    width: 100%;
+    height: 250px;
+  }
+ }
+
+
+@media (min-width: 576px) {
+
+  .custom-contact-form .maps iframe{
+     width: 100%;
+     height: 250px;
+   }
+ }
+
+@media (min-width: 768px) {
+
+
+  .custom-contact-form .maps iframe{
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .custom-contact-form .maps iframe{
+     width: 100%;
+     height: 500px;
+   }
+}
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+.text-end {
+  text-align: end;
+}
+
+.custom-contact-form input[type=text], 
+.custom-contact-form input[type=number]
+{
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.google-reviews + section {
+  margin-top: 0;
+}
+
+select.form-select {
+  display: block;
+  width: 100%;
+  padding: .375rem 2.25rem .375rem .75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-select:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+
+.custom-select {
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.value-selected {
+  margin: 0;
+}
+
+.options {
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.custom-select ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+li.option {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+li.option:hover {
+  color: #fff;
+  background-color: #1272f3;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+.btn-close {
+  --bs-btn-close-color: #000;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  --bs-btn-close-opacity: 0.5;
+  --bs-btn-close-hover-opacity: 0.75;
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-btn-close-focus-opacity: 1;
+  --bs-btn-close-disabled-opacity: 0.25;
+  --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: .25em .25em;
+  color: var(--bs-btn-close-color);
+  background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+  border: 0;
+  border-radius: .375rem;
+  opacity: var(--bs-btn-close-opacity);
+}
+
+textarea {
+  resize: none;
+}
+
+.mybtn {
+  color: #fff;
+  cursor: pointer;
+}
+
+a:not([href]).mybtn:hover {
+  color: #fff;
+}
