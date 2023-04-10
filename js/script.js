@@ -67,11 +67,15 @@ $(document).ready(function() {
     $('a.usluga').on('click', function(e) {
         e.preventDefault();
 
-        console.log( $(this).attr('title') )
+        // console.log( $(this).attr('title') )
 
         $('.custom-select .value-selected').text($(this).attr('title'));
 
-        myModalAlternative.show();
+        if (myModalAlternative != null) {
+            myModalAlternative.show();
+        } else {
+            scrollToForm()
+        }
     })
 
     // przycisk po prawej (sidebar)

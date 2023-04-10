@@ -319,3 +319,22 @@ textarea {
 a:not([href]).mybtn:hover {
   color: #fff;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.header_services__el:hover div {
+  text-decoration: underline;
+}
+
+#logo_a {
+  color: #000;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+}
+
+#logo_a:hover {
+  text-decoration: none;
+}
