@@ -1232,7 +1232,7 @@
     </section>
 
     <section class="custom-contact-form" id="contact">
-      <div class="container mt-5">
+      <div class="container-lg mt-5">
         <div class="d-md-flex">
           <div class="col-md-6 maps">
             <iframe
@@ -1252,20 +1252,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Imię i Nazwisko"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group mt-2">
-                    <label for="">Miasto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Miasto"
-                      value="Wrocław"
-                      disabled
+                      placeholder="Podaj imię i nazwisko"
                       required
                     />
                   </div>
@@ -1276,7 +1263,7 @@
                     <input
                       type="email"
                       class="form-control"
-                      placeholder="Email"
+                      placeholder="Podaj adres e-mail"
                       required
                     />
                   </div>
@@ -1287,10 +1274,18 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Telefon"
+                      placeholder="Podaj numer telefonu"
                       required
                     />
                   </div>
+                </div>
+                <div class="col-lg-6"></div>
+                <div class="col-12 form-group mt-2">
+                  <label for="">Typ klienta</label>
+                  <select class="form-control" name="typ_klienta" id="">
+                    <option value="osoba">Osoba fizyczna</option>
+                    <option value="firma">Firma</option>
+                  </select>
                 </div>
                 <div class="col-12 form-group mt-2">
                   <label for="">Usługa</label>
@@ -1307,6 +1302,49 @@
                       </div>
                       <ul class=""></ul>
                     </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mt-2">
+                    <label for="">Miejscowość</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Miasto"
+                      value="Wrocław"
+                      disabled
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group mt-2">
+                    <label for="">Kod pocztowy</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Podaj kod pocztowy"
+                      value=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group mt-2">
+                    <label for="">Ulica</label>
+                    <input type="text" class="form-control" value="" required />
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="form-group mt-2">
+                    <label for="">Numer domu</label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="form-group mt-2">
+                    <label for="">Lokal</label>
+                    <input type="text" class="form-control" value="" />
                   </div>
                 </div>
                 <div class="col-12">
@@ -1337,7 +1375,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 text-end">
+                <div class="col-12 text-end mt-3">
                   <button class="btn btn-light" type="submit">Wysłać</button>
                 </div>
               </div>
