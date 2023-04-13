@@ -95,14 +95,21 @@
               ><img src="fonts/telephone.svg" alt="Telefon serwis 24/7" />
               <div id="mobile_phone_number_notation">8-16</div></a
             >
-            <a class="d-xl-none" href="#" id="hamburger"
-              ><img
+            <button
+              class="d-xl-none bg-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobile_menu"
+              id="hamburger"
+            >
+              <img
                 id="hamburger_img"
                 title="Rozwiń nawigacji"
                 loading="lazy"
                 src="fonts/hamburger.svg"
                 alt="Ikona rozwijania nawigacji"
-            /></a>
+              />
+            </button>
 
             <a
               style="background-color: #64c11b"
@@ -113,6 +120,16 @@
               <span class="d-block d-md-none">Wezwij</span>
               <span class="d-none d-md-block">Zamów fachowca</span></a
             >
+          </div>
+          <div class="navbar-collapse bg-white collapse py-3" id="mobile_menu">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item text-center text-dark fs-5">
+                <a class="link" title="Usługi" href="./uslugi.html">Usługi</a>
+              </li>
+              <li class="nav-item text-center fs-5">
+                <a class="link" title="Opinie" href="./opinie.html">Opinie</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1445,5 +1462,6 @@
       id="jquery-core-js"
     ></script>
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
