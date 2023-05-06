@@ -50,6 +50,17 @@ $(document).ready(function () {
     myModalAlternative = new bootstrap.Modal("#modal", {});
   }
 
+  $(window).on("scroll", function () {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      $("#topbar").css("background", "rgba(18, 114, 243, 0.8)");
+    } else {
+      $("#topbar").css("background", "transparent");
+    }
+  });
+
   for (const usluga of uslugi_array) {
     $(".custom-select .options ul").append(
       "<li onclick=\"selectUsluga('" +

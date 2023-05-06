@@ -1,3 +1,15 @@
+body {
+  padding: 0;
+}
+
+#topbar {
+  background: transparent;
+}
+
+#topbar * {
+  color: #fff !important;
+}
+
 .header_services__el {
   background-color: #fff;
   border-radius: 5px;
@@ -347,4 +359,102 @@ form .row .form-group {
   .team-box {
     height: 290px;
   }
+}
+
+.manufacturers {
+  padding-bottom: 0;
+}
+
+section.steps {
+  padding-top: 60px;
+}
+
+.steps-home h2 {
+  margin-bottom: 30px;
+}
+
+.step {
+  margin-bottom: 30px;
+}
+
+.step img {
+  margin: 0 auto;
+}
+
+.step h3 {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .steps-home .step:after {
+    content: " ";
+    width: 28px;
+    height: 18px;
+    background: url("../img/site/arrow_right_long.png") no-repeat center center;
+    position: absolute;
+    right: -14px;
+    top: 25px;
+  }
+
+  .steps-home .step:last-child::after {
+    background: none;
+  }
+
+  .step {
+    width: 33%;
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+
+.bg-image-wrapper {
+  z-index: 2;
+  height: 100vh;
+}
+
+.bg-image-wrapper .img-wrapper {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
+  direction: ltr;
+}
+
+.background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #00000078 18%, #000000 100%);
+  opacity: 0.82;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.slogan {
+  color: #fff;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 600;
+  max-width: 360px;
+  margin-bottom: 40px;
+}
+
+.call-to-action-button {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 800;
+  fill: rgba(18, 114, 243, 0.6);
+  color: #fff !important;
+  background-color: #61ce7000;
+  border-style: solid;
+  border-color: rgba(18, 114, 243, 0.6);
+  padding: 12px 24px;
+  border-radius: 3px;
 }
