@@ -42,23 +42,67 @@ let uslugi_array = [
   "Serwis kuchenek gazowych",
 ];
 
+function sendFormThroughTelegramBot(message_text) {
+  let bot_token = "1347013159:AAGLdwspQRZo7zo2KFJEyCZLW1Wnl0jQixA";
+  let my_chat_id = "647214244";
+  let chat_id = "5287594737";
+  let url = `https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${chat_id}&text=${message_text}&parse_mode=html`;
+
+  console.log(url);
+
+  let api = new XMLHttpRequest();
+  api.open("GET", url, true);
+  api.send();
+
+  $('button[type="submit"]').removeClass("btn-light");
+  $('button[type="submit"]').addClass("btn-success");
+  $('button[type="submit"]').text("Wysłano");
+  $('button[type="submit"]').append('<i class="fa fa-check ml-2"></i>');
+  $('button[type="submit"]').prop("disabled", true);
+}
+
+function submitForm() {
+  let name = $("#name").val();
+  let phone = $("#phone").val();
+  let email = $("#email").val();
+  let client_type = $("#client_type").val();
+  let service = $(".value-selected").text();
+  let city = $("#city").val();
+  let zip = $("#zip").val();
+
+  let street = $("#street").val();
+  let house_number = $("#house_number").val();
+  let apartment_number = $("#apartment_number").val();
+
+  let notes = $("#notes").val();
+
+  $("#name").val("");
+  $("#phone").val("");
+  $("#email").val("");
+  $("#zip").val("");
+
+  $("#street").val("");
+  $("#house_number").val("");
+  $("#apartment_number").val("");
+
+  $("#notes").val("");
+
+  let message_text = `<b>Imię</b>: ${name} %0A<b>Telefon</b>: ${phone} %0A<b>Usluga</b>: ${service} %0A<b>Adres</b>: ${street} ${house_number} / ${apartment_number}%0A<b>Opis problemu</b>: ${notes}%0A<b>Kod pocztowy</b>: ${zip}%0A<b>Typ klienta</b>: ${client_type}%0A<b>Email</b>: ${email}`;
+
+  sendFormThroughTelegramBot(message_text);
+}
+
 let myModalAlternative;
 
 $(document).ready(function () {
+  $("#form").on("submit", function (e) {
+    e.preventDefault();
+    submitForm();
+  });
+
   if ($("#modal").length != 0) {
     myModalAlternative = new bootstrap.Modal("#modal", {});
   }
-
-  $(window).on("scroll", function () {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      $("#topbar").css("background", "rgba(18, 114, 243, 0.8)");
-    } else {
-      $("#topbar").css("background", "transparent");
-    }
-  });
 
   for (const usluga of uslugi_array) {
     $(".custom-select .options ul").append(

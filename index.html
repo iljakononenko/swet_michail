@@ -729,12 +729,13 @@
           </div>
           <div class="col-md-6">
             <h2 class="text-uppercase mt-3 font-weight-bold">Kontakt</h2>
-            <form action="">
+            <form action="" id="form">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group mt-2">
                     <label for="">Imię i Nazwisko</label>
                     <input
+                      id="name"
                       type="text"
                       class="form-control"
                       placeholder="Podaj imię i nazwisko"
@@ -746,6 +747,7 @@
                   <div class="form-group mt-2">
                     <label for="">Email</label>
                     <input
+                      id="email"
                       type="email"
                       class="form-control"
                       placeholder="Podaj adres e-mail"
@@ -757,6 +759,7 @@
                   <div class="form-group mt-2">
                     <label for="">Telefon</label>
                     <input
+                      id="phone"
                       type="text"
                       class="form-control"
                       placeholder="Podaj numer telefonu"
@@ -767,7 +770,11 @@
                 <div class="col-lg-6"></div>
                 <div class="col-12 form-group mt-2">
                   <label for="">Typ klienta</label>
-                  <select class="form-control" name="typ_klienta" id="">
+                  <select
+                    class="form-control"
+                    name="typ_klienta"
+                    id="client_type"
+                  >
                     <option value="osoba">Osoba fizyczna</option>
                     <option value="firma">Firma</option>
                   </select>
@@ -794,6 +801,7 @@
                     <label for="">Miejscowość</label>
                     <input
                       type="text"
+                      id="city"
                       class="form-control"
                       placeholder="Miasto"
                       value="Wrocław"
@@ -806,6 +814,7 @@
                   <div class="form-group mt-2">
                     <label for="">Kod pocztowy</label>
                     <input
+                      id="zip"
                       type="text"
                       class="form-control"
                       placeholder="Podaj kod pocztowy"
@@ -817,19 +826,35 @@
                 <div class="col-lg-4">
                   <div class="form-group mt-2">
                     <label for="">Ulica</label>
-                    <input type="text" class="form-control" value="" required />
+                    <input
+                      type="text"
+                      id="street"
+                      class="form-control"
+                      value=""
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-6 col-lg-4">
                   <div class="form-group mt-2">
                     <label for="">Numer domu</label>
-                    <input type="text" class="form-control" value="" />
+                    <input
+                      type="text"
+                      id="house_number"
+                      class="form-control"
+                      value=""
+                    />
                   </div>
                 </div>
                 <div class="col-6 col-lg-4">
                   <div class="form-group mt-2">
                     <label for="">Lokal</label>
-                    <input type="text" class="form-control" value="" />
+                    <input
+                      type="text"
+                      id="apartment_number"
+                      class="form-control"
+                      value=""
+                    />
                   </div>
                 </div>
                 <div class="col-12">
@@ -837,29 +862,14 @@
                     <label for="">Opis problemu</label>
                     <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      id="notes"
                       placeholder="Opis problemu"
                       rows="3"
                       required
                     ></textarea>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="form-group d-none">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="invalidCheck2"
-                        required
-                      />
-                      <label class="form-check-label" for="invalidCheck2">
-                        Zgadzam się z polityką prywatności
-                      </label>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="col-12 text-end mt-3">
                   <button class="btn btn-light" type="submit">Wysłać</button>
                 </div>
@@ -923,7 +933,6 @@
         </div>
       </div>
     </footer>
-
     <script
       type="text/javascript"
       src="js/jquery.js"
@@ -931,5 +940,19 @@
     ></script>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
+          if (
+            document.body.scrollTop > 80 ||
+            document.documentElement.scrollTop > 80
+          ) {
+            $("#topbar").css("background", "rgba(18, 114, 243, 0.8)");
+          } else {
+            $("#topbar").css("background", "transparent");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
