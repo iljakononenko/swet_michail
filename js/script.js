@@ -37,7 +37,6 @@ let uslugi_array = [
   "Regulacja i wymiana drzwi",
   "Remonty i wykańczanie wnętrz",
   "Malowanie i tapetowanie ścian",
-  "Serwis lodówek",
   "Serwis klimatyzacji",
   "Wymiana zamków do drzwi",
   "Serwis kuchenek gazowych",
